@@ -4,6 +4,7 @@
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 
 // Fork to use with Fork of x2js: https://github.com/anvog/x2js/tree/Feature-keepOrder
+// Original sources are available at https://github.com/anvog/DefinitelyTyped 
 
 interface IX2JS {
   new (config?: IX2JSOption): IX2JS;
