@@ -3,6 +3,8 @@
 // Definitions by: Horiuchi_H <https://github.com/horiuchi>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 
+// Fork to use with Fork of x2js: https://github.com/anvog/x2js/tree/Feature-keepOrder
+
 interface IX2JS {
   new (config?: IX2JSOption): IX2JS;
 
@@ -30,6 +32,10 @@ interface IX2JSOption {
   skipEmptyTextNodesForObj?: boolean;
   stripWhitespaces?: boolean;
   datetimeAccessFormPaths?: any[];
+  // Added for x2js Fork: https://github.com/anvog/x2js/tree/Feature-keepOrder
+  keepOrder?: boolean;
+  orderContainerName?: string;
+  arrayOrderItems?: any[];
 }
 
 declare var X2JS: IX2JS;
